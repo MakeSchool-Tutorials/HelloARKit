@@ -56,10 +56,23 @@ class ARSpriteKitViewController: UIViewController, ARSKViewDelegate {
     
     func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode? {
         // Create and configure a node for the anchor added to the view's session.
-        let labelNode = SKLabelNode(text: "👾")
-        labelNode.horizontalAlignmentMode = .center
-        labelNode.verticalAlignmentMode = .center
-        return labelNode
+        let node = SKSpriteNode(imageNamed: "ms-logo.png")
+        node.setScale(0.05)
+        node.anchorPoint = CGPoint(x: 0.5, y: 0)
+        // Create a wrapper node so it will stay scaled down
+        let anchorNode = SKNode()
+        anchorNode.addChild(node)
+        return anchorNode
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let center = CGPoint(x: view.bounds.width / 2, y: view.bounds.height / 2)
+        // Grab furthest feature point (.first = closest feature point)
+        if let hit = sceneView.hitTest(center, types: [.featurePoint]).last {
+            // Add an anchor at the found hit, see view(_:nodeFor) to configure anchor node
+            sceneView.session.add(anchor: ARAnchor(transform: hit.worldTransform))
+        }
+        
     }
     
     func session(_ session: ARSession, didFailWithError error: Error) {

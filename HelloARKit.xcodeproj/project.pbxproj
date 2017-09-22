@@ -16,6 +16,7 @@
 		BCBF16801F75A1D500B91E08 /* ARSpriteKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF167E1F75A1D500B91E08 /* ARSpriteKitViewController.swift */; };
 		BCBF16811F75A1D500B91E08 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF167F1F75A1D500B91E08 /* Scene.swift */; };
 		BCBF16821F75AD5000B91E08 /* Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = BCBF167D1F75A1C800B91E08 /* Scene.sks */; };
+		BCBF16881F75B8A400B91E08 /* ms-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = BCBF16871F75B8A100B91E08 /* ms-logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		BCBF167D1F75A1C800B91E08 /* Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene.sks; sourceTree = "<group>"; };
 		BCBF167E1F75A1D500B91E08 /* ARSpriteKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSpriteKitViewController.swift; sourceTree = "<group>"; };
 		BCBF167F1F75A1D500B91E08 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		BCBF16871F75B8A100B91E08 /* ms-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ms-logo.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				BCBF167D1F75A1C800B91E08 /* Scene.sks */,
 				BCBF167F1F75A1D500B91E08 /* Scene.swift */,
 				BCBF167E1F75A1D500B91E08 /* ARSpriteKitViewController.swift */,
+				BCBF16871F75B8A100B91E08 /* ms-logo.png */,
 				BCBF164D1F74206600B91E08 /* Main.storyboard */,
 				BCBF16501F74206600B91E08 /* Assets.xcassets */,
 				BCBF16521F74206600B91E08 /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCBF16881F75B8A400B91E08 /* ms-logo.png in Resources */,
 				BCBF164A1F74206600B91E08 /* art.scnassets in Resources */,
 				BCBF16541F74206600B91E08 /* LaunchScreen.storyboard in Resources */,
 				BCBF16511F74206600B91E08 /* Assets.xcassets in Resources */,
