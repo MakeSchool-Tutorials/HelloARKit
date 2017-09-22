@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		BCBF16481F74206600B91E08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF16471F74206600B91E08 /* AppDelegate.swift */; };
 		BCBF164A1F74206600B91E08 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = BCBF16491F74206600B91E08 /* art.scnassets */; };
-		BCBF164C1F74206600B91E08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF164B1F74206600B91E08 /* ViewController.swift */; };
+		BCBF164C1F74206600B91E08 /* ARSceneKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF164B1F74206600B91E08 /* ARSceneKitViewController.swift */; };
 		BCBF164F1F74206600B91E08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCBF164D1F74206600B91E08 /* Main.storyboard */; };
 		BCBF16511F74206600B91E08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCBF16501F74206600B91E08 /* Assets.xcassets */; };
 		BCBF16541F74206600B91E08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCBF16521F74206600B91E08 /* LaunchScreen.storyboard */; };
+		BCBF16801F75A1D500B91E08 /* ARSpriteKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF167E1F75A1D500B91E08 /* ARSpriteKitViewController.swift */; };
+		BCBF16811F75A1D500B91E08 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF167F1F75A1D500B91E08 /* Scene.swift */; };
+		BCBF16821F75AD5000B91E08 /* Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = BCBF167D1F75A1C800B91E08 /* Scene.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BCBF16441F74206600B91E08 /* HelloARKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloARKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBF16471F74206600B91E08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCBF16491F74206600B91E08 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		BCBF164B1F74206600B91E08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCBF164B1F74206600B91E08 /* ARSceneKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSceneKitViewController.swift; sourceTree = "<group>"; };
 		BCBF164E1F74206600B91E08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCBF16501F74206600B91E08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCBF16531F74206600B91E08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCBF16551F74206600B91E08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCBF167D1F75A1C800B91E08 /* Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene.sks; sourceTree = "<group>"; };
+		BCBF167E1F75A1D500B91E08 /* ARSpriteKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSpriteKitViewController.swift; sourceTree = "<group>"; };
+		BCBF167F1F75A1D500B91E08 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				BCBF16471F74206600B91E08 /* AppDelegate.swift */,
+				BCBF164B1F74206600B91E08 /* ARSceneKitViewController.swift */,
 				BCBF16491F74206600B91E08 /* art.scnassets */,
-				BCBF164B1F74206600B91E08 /* ViewController.swift */,
+				BCBF167D1F75A1C800B91E08 /* Scene.sks */,
+				BCBF167F1F75A1D500B91E08 /* Scene.swift */,
+				BCBF167E1F75A1D500B91E08 /* ARSpriteKitViewController.swift */,
 				BCBF164D1F74206600B91E08 /* Main.storyboard */,
 				BCBF16501F74206600B91E08 /* Assets.xcassets */,
 				BCBF16521F74206600B91E08 /* LaunchScreen.storyboard */,
@@ -130,6 +139,7 @@
 				BCBF16541F74206600B91E08 /* LaunchScreen.storyboard in Resources */,
 				BCBF16511F74206600B91E08 /* Assets.xcassets in Resources */,
 				BCBF164F1F74206600B91E08 /* Main.storyboard in Resources */,
+				BCBF16821F75AD5000B91E08 /* Scene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCBF164C1F74206600B91E08 /* ViewController.swift in Sources */,
+				BCBF16811F75A1D500B91E08 /* Scene.swift in Sources */,
+				BCBF16801F75A1D500B91E08 /* ARSpriteKitViewController.swift in Sources */,
+				BCBF164C1F74206600B91E08 /* ARSceneKitViewController.swift in Sources */,
 				BCBF16481F74206600B91E08 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

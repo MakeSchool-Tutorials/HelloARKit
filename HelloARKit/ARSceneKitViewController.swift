@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ARSceneKitViewController.swift
 //  HelloARKit
 //
 //  Created by Dion Larson on 9/21/17.
@@ -10,7 +10,7 @@ import UIKit
 import SceneKit
 import ARKit
 
-class ViewController: UIViewController, ARSCNViewDelegate {
+class ARSceneKitViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
     
