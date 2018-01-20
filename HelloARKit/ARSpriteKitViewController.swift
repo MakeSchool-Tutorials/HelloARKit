@@ -52,6 +52,7 @@ class ARSpriteKitViewController: UIViewController, ARSKViewDelegate {
         // Release any cached data, images, etc that aren't in use.
     }
     
+    
     // MARK: - ARSKViewDelegate
     
     func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode? {
@@ -72,7 +73,6 @@ class ARSpriteKitViewController: UIViewController, ARSKViewDelegate {
             // Add an anchor at the found hit, see view(_:nodeFor) to configure anchor node
             sceneView.session.add(anchor: ARAnchor(transform: hit.worldTransform))
         }
-        
     }
     
     func session(_ session: ARSession, didFailWithError error: Error) {
