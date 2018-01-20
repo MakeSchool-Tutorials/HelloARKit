@@ -2,8 +2,8 @@
 //  ARSpriteKitViewController.swift
 //  HelloARKit
 //
-//  Created by Dion Larson on 9/22/17.
-//  Copyright © 2017 Make School. All rights reserved.
+//  Created by Dion Larson on 1/20/18.
+//  Copyright © 2018 Make School. All rights reserved.
 //
 
 import UIKit
@@ -35,7 +35,7 @@ class ARSpriteKitViewController: UIViewController, ARSKViewDelegate {
         
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
-
+        
         // Run the view's session
         sceneView.session.run(configuration)
     }
@@ -52,27 +52,14 @@ class ARSpriteKitViewController: UIViewController, ARSKViewDelegate {
         // Release any cached data, images, etc that aren't in use.
     }
     
-    
     // MARK: - ARSKViewDelegate
     
     func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode? {
         // Create and configure a node for the anchor added to the view's session.
-        let node = SKSpriteNode(imageNamed: "ms-logo.png")
-        node.setScale(0.05)
-        node.anchorPoint = CGPoint(x: 0.5, y: 0)
-        // Create a wrapper node so it will stay scaled down
-        let anchorNode = SKNode()
-        anchorNode.addChild(node)
-        return anchorNode
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let center = CGPoint(x: view.bounds.width / 2, y: view.bounds.height / 2)
-        // Grab furthest feature point (.first = closest feature point)
-        if let hit = sceneView.hitTest(center, types: [.featurePoint]).last {
-            // Add an anchor at the found hit, see view(_:nodeFor) to configure anchor node
-            sceneView.session.add(anchor: ARAnchor(transform: hit.worldTransform))
-        }
+        let labelNode = SKLabelNode(text: "👾")
+        labelNode.horizontalAlignmentMode = .center
+        labelNode.verticalAlignmentMode = .center
+        return labelNode
     }
     
     func session(_ session: ARSession, didFailWithError error: Error) {
